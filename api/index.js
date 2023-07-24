@@ -7,6 +7,7 @@ const eventRouter = require("./routes/eventRoutes");
 const videoRouter = require("./routes/videoRoutes");
 const paymentRouter = require('./routes/paymentRoutes');
 const archiveRouter = require('./routes/archiveRoutes');
+const galleryRouter = require('./routes/galleryRoutes');
 const path = require("path");
 
 const app = express();
@@ -31,6 +32,8 @@ app.use("/api/admin", eventRouter);
 app.use("/api/admin", videoRouter);
 app.use("/api/payments", paymentRouter);
 app.use('/api/admin', archiveRouter);
+app.use('/api/gallery', galleryRouter);
+
 app.use("/api/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.listen(4500, () => {

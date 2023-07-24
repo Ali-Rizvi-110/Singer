@@ -18,6 +18,9 @@ import DeleteVideo from "./Admin/DeleteVideo"
 import ArchiveTable from "./Admin/ArchiveTable";
 import UpdateArchive from "./Admin/UpdateArchive";
 import Archive from "./component/Archive";
+import "remixicon/fonts/remixicon.css";
+import AddImageInGallery from './Admin/AddImageInGallery'
+import DeleteImagesFromGallery from './Admin/DeleteImagesFromGallery'
 
 
 const App = () => {
@@ -41,6 +44,8 @@ const App = () => {
         <Route path="/admin/deleteVideo" element = {<DeleteVideo />}/>
         <Route path="/admin/archiveTable" element = {<ArchiveTable/>}/>
         <Route path="/admin/updateArchive/:id" element = {<UpdateArchive/>}/>
+        <Route path="/admin/addImageInGallery" element = {<AddImageInGallery/>}/>
+        <Route path="/admin/deleteImageFromGallery" element = {<DeleteImagesFromGallery/>}/>
       </Route>
 
       </Routes>

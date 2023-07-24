@@ -57,8 +57,8 @@ const Dashboard = () => {
                   <MenuItem onClick={() => navigate("/admin/addVideo")}>
                     Add Video
                   </MenuItem>
-                  <MenuItem onClick={()=>navigate('/admin/deleteVideo')}> 
-                    Delete Video 
+                  <MenuItem onClick={() => navigate("/admin/deleteVideo")}>
+                    Delete Video
                   </MenuItem>
                 </SubMenu>
                 <SubMenu label="Events">
@@ -75,7 +75,10 @@ const Dashboard = () => {
                   </MenuItem>
                 </SubMenu>
                 <MenuItem> Documentation </MenuItem>
-                <MenuItem> Calendar </MenuItem>
+                <SubMenu label="Gallery">
+                  <MenuItem onClick={()=>navigate('/admin/addImageInGallery')} >Add Image In Gallery </MenuItem>
+                  <MenuItem onClick={()=>navigate('/admin/deleteImageFromGallery')} >Delete Image In Gallery </MenuItem>
+                </SubMenu>
                 <MenuItem onClick={logout}> Logout </MenuItem>
               </Menu>
             </Sidebar>

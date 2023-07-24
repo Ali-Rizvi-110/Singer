@@ -315,6 +315,10 @@
 .demos {
 	display: flex;
 }
+.demos img {
+	height: 10vmax;
+	width: 10vmax;
+}
 .demos h2 {
 	text-align: center;
 	font-size: 2vmax;
