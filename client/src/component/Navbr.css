@@ -1,0 +1,80 @@
+*{
+margin:0;
+padding:0;
+box-sizing:boder-box;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
+
+
+html,body{
+height:100%;
+width:100%;
+font-family: Poppins;
+overflow-x: hidden;
+
+}
+#nav{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    z-index: 999;
+    top: 0%;
+    width: 100vw;
+    background-color: #0000003d;
+    color: white;
+}
+.navbr{
+    height: 6vh;
+    width: 70vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navp1{
+    height: 6vh;
+    width: 30vw;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navp1>a{
+    text-decoration: none;
+    /* color: black; */
+    color: white;
+    font-size: 2vh;
+    font-family: Poppins;
+}
+@media screen and (max-width: 600px) {
+    #nav{
+        height: 8vh;
+        width:100vw;
+    }
+    .navbr{
+        height: 8vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .navp1{
+        width: 10vw;
+        font-size: 0.5vh;
+    }
+    .navp1>a{
+        display: none;
+    }
+    #rnavi{
+        display: block;
+    }
+    .rightNav{
+       display: none;
+    }
+    
+    
+}

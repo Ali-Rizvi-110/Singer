@@ -1,0 +1,144 @@
+.recentmain{
+    background-color: #191919;
+}
+
+.recents{
+    width: 90%;
+    /* height: auto; */
+    margin-top: 8vmax;
+    z-index: 1;
+    background-color: black;
+    color: white;
+}
+.recents .recent1{
+    width: 90%;
+    margin-top: 2vmax;
+    background-color: #191919;
+    color: white;
+   
+
+
+}
+.recent2{
+    width: 90%;
+    margin-top: 2vmax;
+   
+}
+.recent2 img{
+    width: 100%;
+}
+.recent1 p{
+    width: 90%;
+    color: gray;
+    font-size: 1.4vmax;
+}
+.recent1 h1{
+    width: 90%;
+    letter-spacing: -0.2vmax;
+    font-size: 3.5vmax;
+}
+
+.recent1 h4{
+    width: 90%;
+}
+.comment{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.comment i{
+    width: 5vmax;
+    height: 5vmax;
+    font-size: 3vmax;
+    background-color: gray;
+    text-align: center;
+    border-radius: 0.5vmax;
+
+}
+.comment button{
+    background-color:gray;
+    color: black;
+    font-size: 1.5vmax;
+    padding: 0.5vmax 1vmax;
+
+}
+.leave{
+    width: 90%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 2vmax;
+}
+.leave p{
+    font-size: 2vmax;
+}
+.leave .name {
+width: 90%;
+/* background-color: red; */
+display: flex;
+justify-content:space-evenly;
+}
+.name input{
+    width: 40%;
+    padding: 1vmax;
+    font-size: 1.5vmax;
+}
+.website{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vmax;
+
+}
+.website input{
+    width: 86.8%;
+    padding: 1vmax;
+    font-size: 1.5vmax;
+   
+}
+.website textarea{
+    width: 86.8%;
+    height: 10vmax;
+    padding: 1vmax;
+    font-size: 1.5vmax;
+    margin-top: 2vmax;
+}
+.check{
+    width: 80%;
+    display: flex;
+    justify-content: center;  
+    margin-top: 1vmax; 
+}
+.check input {
+    width: 2vmax;
+    margin-top: -1vmax;
+    padding: 1vmax;
+    margin-right: 1vmax;
+}
+.check p{
+    width: 87%;
+    font-size: 1.5vmax;
+}
+.post button{
+    background-color:white;
+    color: black;
+    font-size: 1.5vmax;
+    padding: 0.5vmax 1vmax;
+    border-radius: 0.5vmax;
+    transition: 0.3s;
+    margin-bottom: 2vmax;
+}
+.post button:hover{
+    background-color: firebrick;
+    color: white;
+}
+
+
+
+@media (max-width:600px) {
+    .recents{
+        margin-top: 17vmax;
+    }
+}
