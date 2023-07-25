@@ -1,4 +1,9 @@
+import axios from "axios";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+
 
 export default function EvenGridCard({
   imageUrl,
@@ -8,7 +13,10 @@ export default function EvenGridCard({
   time,
   price,
   delay,
+  eventId,
 }) {
+  const navigate = useNavigate();
+
   return (
     <motion.div
       className="flex flex-col p-3 bg-[#191919] w-fit"
@@ -63,7 +71,10 @@ export default function EvenGridCard({
         </ul>
         <div className="flex justify-between items-center">
           <span className="text-2xl font-medium">${price}</span>
-          <button className="rounded-full bg-red-800 px-8 py-2 uppercase">
+          <button
+            onClick={() => navigate(`/EventDetail/${eventId}`)}
+            className="rounded-full bg-red-800 px-8 py-2 uppercase"
+          >
             buy ticket
           </button>
         </div>

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import EvenGridCard from "../component/EventGridCard";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function EventGrid() {
   const [events, setEvents] = useState([{}]);
@@ -76,6 +77,7 @@ export default function EventGrid() {
           {events?.map((event, i) => (
             <EvenGridCard
               key={i}
+              eventId = {event._id}
               imageUrl={`http://localhost:4500/api/uploads/${event.image}`}
               title={event.name}
               date={event.startDate}

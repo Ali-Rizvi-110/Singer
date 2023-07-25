@@ -664,7 +664,7 @@ const Homepage = () => {
                 whileInView={{ x: 0, scale: 1 }}
                 className="event"
                 onClick={() => {
-                  navigate(`/Eventdetail/${ivent._id}`);
+                  navigate(`/EventGrid`);
                 }}
               >
                 <div className="eventlist" key={index}>
